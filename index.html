@@ -22,7 +22,7 @@
             //各位观众老爷们一键三连，下次一定！
 
             //宅男数量
-            var nodesnum = 360
+            var nodesnum = 500
                 //中二病下毒机会
             var xiadu = 1
                 //中二病的传染性，接触就传染的概率
@@ -288,7 +288,7 @@
                 }, {
                     text: '说明:\n2020年的某一天\n未知疾病突然出现\n迅速在宅男之间传播\n这一传说中的疾病被命名为:中二病\n每个点表示一个宅男\n点之间的连线代表宅男之间二次元的灵魂交流\n\n参数：\n传染性：每天交流传染中二病的概率\n潜伏期天数：潜伏期内会传染，潜伏期结束后\n隔离治疗，并判断治愈还是死亡\n\n怎么玩:\n你可以前期疯狂传染，后期调整参数防控\n如何控制传播？\n1.减少人与人的接触（图的边密度减少）\n2.戴口罩降低传染性（有交流就传染的概率降低）\n3.早发现早隔离避免潜伏期内传播（潜伏期天数减少）\n\n实现群体免疫：\n在传播到后期大部分人都治愈时（有抗体）再下毒\n虽然传染性强但也传播不开了',
                     textStyle: {
-                        fontSize: 12
+                        fontSize: 15
                     },
                     top: 'bottom',
                     left: 'left'
@@ -337,7 +337,7 @@
                     type: 'graph',
                     name: '宅男',
                     layout: 'force',
-                    symbolSize: 12,
+                    symbolSize: 22,
                     roam: true,
                     top: '24%',
                     label: {
@@ -368,9 +368,9 @@
                     },
                     draggable: true,
                     force: {
-                        repulsion: 20,
-                        gravity: 0.12,
-                        edgeLength: 1
+                        repulsion: 30,
+                        gravity: 0.07,
+                        edgeLength: 40
                     }
                 }, {
                     xAxisIndex: 0,
